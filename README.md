@@ -1,5 +1,7 @@
 # rust-tokio-example
 
+非同期ライブラリtokioの検証用リポジトリ
+
 ## Development
 
 ```sh
