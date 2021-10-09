@@ -6,6 +6,9 @@
 rustup update
 rustup component list --installed
 rustup component add rustfmt clippy rust-src rls rust-analysis
+cargo install cargo-watch cargo-edit
+# repl
+cargo install evcxr_repl
 ```
 
 ```sh
@@ -16,3 +19,7 @@ cd rust-tokio-example
 ## tokio
 
 <https://github.com/tokio-rs/tokio>
+
+```sh
+cargo add tokio --features full
+```
