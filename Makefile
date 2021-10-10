@@ -1,5 +1,5 @@
 usage:
-	@echo "Usage: " && grep '^.PHONY' Makefile | awk '{print "  make "' $$2}'
+	@echo "Usage: " && grep '^.PHONY' Makefile | awk '{print "  make " $$2}'
 
 .PHONY: setup-dev
 setup-dev:
@@ -43,7 +43,7 @@ f: format
 .PHONY: check
 check:
 	cargo check
-	
+
 .PHONY: check-watch
 check-watch:
 	cargo watch -x check
