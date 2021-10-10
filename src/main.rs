@@ -10,8 +10,6 @@ async fn main() -> io::Result<()> {
     loop {
         let (mut socket, _) = listener.accept().await?;
 
-        tokio::spawn(async move {
-            socket.write_all(b"hello from Tokio\n").await
-        });
+        tokio::spawn(async move { socket.write_all(b"hello from Tokio\n").await });
     }
 }
