@@ -40,6 +40,14 @@ format:
 .PHONY: f
 f: format
 
+.PHONY: check
+check:
+	cargo check
+	
+.PHONY: check-watch
+check-watch:
+	cargo watch -x check
+
 .PHONY: lint
 lint:
 	cargo clippy
